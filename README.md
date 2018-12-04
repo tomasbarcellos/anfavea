@@ -1,6 +1,6 @@
 # anfavea
 
-The goal of anfavea is to ...
+Dados das séries históricas da ANFAVEA
 
 ## Installation
 
