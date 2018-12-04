@@ -1,24 +1,35 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-anfavea
-=======
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# anfavea
+
+<!-- [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) -->
+
 Dados da [ANFAVEA](http://www.anfavea.com.br/) no `R`.
 
-Installation
-------------
+## Installation
 
 ``` r
 devtools::install_github("tomasbarcellos/anfavea")
 ```
 
-Example
--------
+## Example
 
 ### Emprego
 
-``` r
+```{r example}
 library(anfavea)
 suppressPackageStartupMessages(
   library(tidyverse)
@@ -31,11 +42,10 @@ empregos %>%
   theme_classic()
 ```
 
-<img src="man/figures/README-example-1.png" width="100%" />
-
 ### Exportacoes
 
-``` r
+
+```{r}
 exportacoes %>% 
   filter(mes >= as.Date("2000-01-01"), tipo != "total") %>% 
   ggplot(aes(mes, valor, fill = tipo)) +
@@ -44,11 +54,10 @@ exportacoes %>%
   theme_classic()
 ```
 
-<img src="man/figures/README-unnamed-chunk-1-1.png" width="100%" />
 
 ### Licenciamento e producao
 
-``` r
+```{r}
 veiculos %>% 
   filter(valor > 0, mes >= as.Date("2000-01-01"), 
          variavel == "Licenciamento Importados") %>% 
@@ -58,11 +67,9 @@ veiculos %>%
   theme_classic()
 ```
 
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
-
 ### Maquinas
 
-``` r
+```{r}
 maquinas %>% 
   filter(valor > 0, mes >= as.Date("2000-01-01"), 
          variavel == "Produção", maquina != "TRATORES DE RODAS") %>% 
@@ -72,4 +79,3 @@ maquinas %>%
   theme_classic()
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
