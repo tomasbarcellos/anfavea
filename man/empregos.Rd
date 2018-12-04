@@ -4,12 +4,11 @@
 \name{empregos}
 \alias{empregos}
 \title{Empregos no setor automotivo desde 1983}
-\format{Um data frame com 432 linhas e 4 variaveis:
+\format{Um data frame com 864 linhas e 3 variaveis:
 \describe{
   \item{mes}{Mes}
-  \item{total}{Total de empregos em ambos setores}
-  \item{veiculos}{Empregos para producao de veiculos}
-  \item{maquinas}{Empregos para producao de maquinas}
+  \item{tipo}{Setor}
+  \item{valor}{Empregos}
 }}
 \source{
 \url{http://www.anfavea.com.br/estatisticas.html}

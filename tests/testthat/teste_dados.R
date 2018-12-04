@@ -18,17 +18,17 @@ test_that("Tabela maquinas' esta como esperada", {
 context("Empregos")
 test_that("Tabela 'emprego' esta como esperada", {
   expect_true(exists("empregos", "package:anfavea"))
-  expect_identical(ncol(anfavea::empregos), 4L)
+  expect_identical(ncol(anfavea::empregos), 3L)
   expect_identical(names(anfavea::empregos),
-                   c("mes", "total", "veiculos", "maquinas"))
+                   c("mes", "tipo", "valor"))
 })
 
 context("Exportacoes")
 test_that("Tabela 'exportacoes' esta como esperada", {
   expect_true(exists("exportacoes", "package:anfavea"))
-  expect_identical(ncol(anfavea::exportacoes), 4L)
+  expect_identical(ncol(anfavea::exportacoes), 3L)
   expect_identical(names(anfavea::exportacoes),
-                   c("mes", "total", "veiculos", "maquinas"))
+                   c("mes", "tipo", "valor"))
 })
 
 

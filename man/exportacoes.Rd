@@ -4,12 +4,11 @@
 \name{exportacoes}
 \alias{exportacoes}
 \title{Exportacao de veiculos e maquinas desde 1985}
-\format{Um data frame com 408 linhas e 4 variaveis:
+\format{Um data frame com 816 linhas e 3 variaveis:
 \describe{
   \item{mes}{Mes}
-  \item{total}{Total de exportado em ambos setores, em mil US$}
-  \item{veiculos}{Exportacoes de veiculos, em mil US$}
-  \item{maquinas}{Exportacoes de maquinas, em mil US$}
+  \item{tipo}{Setor}
+  \item{valor}{Exportacoes, em mil US$}
 }}
 \source{
 \url{http://www.anfavea.com.br/estatisticas.html}
