@@ -29,11 +29,15 @@ devtools::install_github("tomasbarcellos/anfavea")
 
 ### Emprego
 
+```{r tidyvese, include=FALSE}
+library(tidyverse)
+```
+
+
 ```{r example}
 library(anfavea)
-suppressPackageStartupMessages(
-  library(tidyverse)
-)
+library(tidyverse)
+
 empregos %>% 
   filter(valor > 0) %>% 
   ggplot(aes(mes, valor, col = tipo)) +

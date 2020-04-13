@@ -1,28 +1,26 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-anfavea
-=======
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+# anfavea
+
+<!-- [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) -->
+
 Dados da [ANFAVEA](http://www.anfavea.com.br/) no `R`.
 
-Installation
-------------
+## Installation
 
 ``` r
 devtools::install_github("tomasbarcellos/anfavea")
 ```
 
-Example
--------
+## Example
 
 ### Emprego
 
 ``` r
 library(anfavea)
-suppressPackageStartupMessages(
-  library(tidyverse)
-)
+library(tidyverse)
+
 empregos %>% 
   filter(valor > 0) %>% 
   ggplot(aes(mes, valor, col = tipo)) +
