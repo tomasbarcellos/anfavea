@@ -4,13 +4,15 @@
 \name{veiculos}
 \alias{veiculos}
 \title{Vendas, producao e exportacao de veiculos desde 1957}
-\format{Um data frame com 18600 linhas e 4 variaveis:
+\format{
+Um data frame com 18600 linhas e 4 variaveis:
 \describe{
   \item{mes}{Mes}
   \item{veiculo}{Tipo de veiculo}
   \item{variavel}{Variavel}
   \item{valor}{Valor}
-}}
+}
+}
 \source{
 \url{http://www.anfavea.com.br/estatisticas.html}
 }
